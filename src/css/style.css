@@ -1,0 +1,169 @@
+/* main color palette */
+:root {
+    --text-primary: white;
+    --text-secondary: #C7D4D6;
+    --background-primary: #272727;
+    --background-secondary: #747474;
+    --error: #FF652F;
+    --light-accent: #FFE400;
+    --dark-accent: #14A76C;
+
+    font-family: monaco, monospace;
+    text-align: center;
+}
+
+.other-content {
+    color: var(--text-primary);
+    background-color: var(--background-primary  );
+}
+
+.home-content {
+    color: var(--text-primary);
+    background-color: var(--background-primary);
+}
+
+img {
+    border-radius: 5px;
+    border: 3px solid var(--background-secondary);
+}
+
+a {
+    color: var(--text-primary);
+}
+
+a:hover {
+    text-decoration-color: var(--dark-accent);
+}
+
+.errorMessage {
+    background-color: var(--error);
+    font-weight: bold;
+    width: 300px;
+}
+.errorMessage:hover {
+    padding: 0.25rem;
+    border-style: outset;
+}
+
+button {
+    padding: 0.5rem;
+    margin-top: 1em;
+    border-style: none;
+    border-radius: 0.25rem;
+    color: var(--text-primary);
+    background-color: var(--dark-accent);
+}
+
+button:hover {
+    transform: scale(1.1);
+    border-style: outset;
+    border-radius: 0.35rem;
+}
+
+
+/* --------------------------- Navbar ----------------------------*/
+/* ---------------------------------------------------------------*/
+.navbar {
+    text-align: left;
+}
+
+hr.navbar {
+    border-color: var(--dark-accent);
+    background-color: var(--dark-accent);
+    border-style: solid;
+    color: var(--dark-accent);
+    height: 1px;
+}
+
+a.navbar {
+    text-decoration: none;
+    color: var(--text-primary);
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+a.navbar:hover {
+    text-decoration: underline;
+    text-size-adjust: 5%;
+    text-decoration-color: var(--dark-accent)
+}
+
+/* --------------------------- About Me Bar ----------------------*/
+/* ---------------------------------------------------------------*/
+div.aboutNav {
+    margin-left: auto;
+    width: 95%;
+}
+
+div.aboutPage hr {
+    border-color: var(--light-accent);
+    background-color: var(--light-accent);
+    border-style: solid;
+    color: var(--light-accent);
+    height: 1px;
+}
+
+/* --------------------------- About Me --------------------------*/
+/* ---------------------------------------------------------------*/
+.aboutPage .content{
+    margin: auto;
+    max-width: 95%;
+}
+
+div.aboutPage a {
+    text-decoration-color: var(--dark-accent);
+}
+
+div.aboutPage a:hover {
+    text-decoration-color: var(--light-accent);
+}
+
+/* --------------------------- Videos ----------------------------*/
+/* ---------------------------------------------------------------*/
+
+
+/* --------------------------- 404 Page --------------------------*/
+/* ---------------------------------------------------------------*/
+div.noPage { 
+    overflow:hidden;
+}
+div.noPage ._404 {
+    font-size: 600%;
+    font-weight: 600;
+    animation: fourohfour 15s linear 0s infinite normal, rotate 20s linear 0s infinite normal;
+}
+
+@keyframes fourohfour {
+    0% {color: var(--text-primary);}
+    25% {color: var(--dark-accent);}
+    50% {color: var(--light-accent);}
+    75% {color: var(--error);}
+    100% {color: var(--text-primary);}
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+}
+
+
+div.noPage .notfound {
+    font-size: 150%;
+    font-weight: 600;
+}
+
+div.noPage a {
+    text-decoration-color: var(--dark-accent);
+}
+
+div.noPage a:hover {
+    text-decoration-color: var(--error);
+}
+
+
+
+/* --------------------------- DnDSearch -------------------------*/
+/* ---------------------------------------------------------------*/
+div.dndSearchPage input {
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+}
