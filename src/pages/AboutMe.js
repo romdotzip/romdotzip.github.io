@@ -25,7 +25,7 @@ function AboutMe() {
                     other web vulnerabilties of course.
                 </p>
                 <p>
-                    Go take a look at my <a href="https://github.com/rm0819">github</a> to see
+                    Go take a look at my <a href="https://github.com/rm0819" target="_blank">github</a> to see
                     some more info about me, and any of my public projects.
                 </p>
             </div>
