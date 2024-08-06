@@ -1,7 +1,7 @@
 {
   "name": "rm0819-website",
   "version": "0.1.0",
-  "homepage": "https://rm0819.github.io/rm0819-website",
+  "homepage": "https://rm0819.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

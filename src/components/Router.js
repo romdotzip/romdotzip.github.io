@@ -12,12 +12,12 @@ const Router = () => {
     <HashRouter>
         <Navbar />
         <Routes>
-            <Route path="/rm0819-website/" element={<HomePage />} />
-            <Route path="/rm0819-website/home" element={<HomePage />} />
-            <Route path="/rm0819-website/dndsearch" element={<DndSearch />} />
-            <Route path="/rm0819-website/bomberman" element={<Bomberman />} />
-            <Route path="/rm0819-website/about" element={<AboutMe />} />
-            <Route path="/rm0819-website/videos" element={<Videos />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/dndsearch" element={<DndSearch />} />
+            <Route path="/bomberman" element={<Bomberman />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/videos" element={<Videos />} />
             <Route path="*" element={<NoPage />} />
         </Routes>
     </HashRouter>
