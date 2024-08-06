@@ -4,7 +4,7 @@ function AboutMeBar() {
     return (
         <div className={`aboutPage aboutNav`}>
             <nav className="navbar">
-                <Link to="/videos" className="navbar">Videos</Link>
+                <Link to="/rm0819-website/videos" className="navbar">Videos</Link>
             </nav>
             <hr className="navbar" />
         </div>
