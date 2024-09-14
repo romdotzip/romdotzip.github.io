@@ -67,9 +67,7 @@ iframe {
 
 /* --------------------------- Navbar ----------------------------*/
 /* ---------------------------------------------------------------*/
-.navbar {
-    text-align: left;
-}
+
 
 hr.navbar {
     border-color: var(--dark-accent);
@@ -88,14 +86,13 @@ a.navbar {
 
 a.navbar:hover {
     text-decoration: underline;
-    text-size-adjust: 5%;
     text-decoration-color: var(--dark-accent)
 }
 
 /* --------------------------- About Me Bar ----------------------*/
 /* ---------------------------------------------------------------*/
 div.aboutNav {
-    margin-left: auto;
+    margin: auto;
     width: 95%;
 }
 
@@ -124,6 +121,9 @@ div.aboutPage a:hover {
 
 /* --------------------------- Videos ----------------------------*/
 /* ---------------------------------------------------------------*/
+/*div.videos iframe {
+    
+}*/
 
 
 /* --------------------------- 404 Page --------------------------*/
