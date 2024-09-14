@@ -61,8 +61,8 @@ button:hover {
 }
 
 iframe {
-    max-width: 100vh;
-    max-height: 100vh;
+    max-width: 90%;
+    max-height: 100%
 }
 
 /* --------------------------- Navbar ----------------------------*/

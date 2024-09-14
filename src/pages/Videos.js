@@ -16,7 +16,7 @@ function Videos() {
             </p>
             <iframe
                 title="Sora Smashdown - Underdogs"
-                width={420}
+                width={800}
                 height={315}
                 src="https://www.youtube.com/embed/gB79jwdl0uE?si=ICXulDgts0ZnVBel"
             ></iframe>
