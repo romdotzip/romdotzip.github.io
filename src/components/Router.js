@@ -5,11 +5,11 @@ import Bomberman from '../pages/Bomberman';
 import DndSearch from '../pages/DndSearch';
 import AboutMe from '../pages/AboutMe';
 import Videos from '../pages/Videos';
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Router = () => {
     return (
-    <HashRouter>
+    <BrowserRouter>
         <Navbar />
         <Routes>
             <Route path="/" element={<HomePage />} />
@@ -20,7 +20,7 @@ const Router = () => {
             <Route path="/videos" element={<Videos />} />
             <Route path="*" element={<NoPage />} />
         </Routes>
-    </HashRouter>
+    </BrowserRouter>
     )
 };
 
