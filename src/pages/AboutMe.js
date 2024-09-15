@@ -13,7 +13,15 @@ function AboutMe() {
             <AboutMeBar />
             <div className="content">
                 <h1>It's me time!!! Let's talk about me!!</h1>
-                <img src={linkImage} alt="Link from The Legend of Zelda: Wind Waker, making a grumpy face."/>
+                <div className="profileCard">
+                    <img 
+                        src={linkImage} 
+                        alt="Link from The Legend of Zelda: Wind Waker, making a grumpy face." 
+                        width="330" 
+                        height="300"
+                    />
+
+                </div>
                 <p>
                     My name is Matt. I'm a student studying cyber and network security. I enjoy
                     solving puzzles, fixing problems, and creating new and fun things.

@@ -17,17 +17,17 @@ function Videos() {
             <div className="videos">
                 <iframe
                     title="Sora Smashdown - Underdogs"
-                    width={420}
-                    height={315}
+                    width="420"
+                    height="315"
                     src="https://www.youtube.com/embed/gB79jwdl0uE?si=ICXulDgts0ZnVBel"
-                    allowfullscreen
+                    allow="fullscreen"
                 ></iframe>
                 <iframe 
                     title="Making a new friend with @rallyysnipes on #ark #arksurvivalevolved #gaming #dinosaur"
-                    width="315" 
-                    height="560" 
+                    width="420" 
+                    height="315" 
                     src="https://www.youtube.com/embed/E854LsszPkw"
-                    allowfullscreen
+                    allow="fullscreen"
                 ></iframe>
             </div>
         </div>
