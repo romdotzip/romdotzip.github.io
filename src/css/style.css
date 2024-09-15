@@ -8,8 +8,11 @@
     --light-accent: #FFE400;
     --dark-accent: #14A76C;
 
-    font-family: monaco, monospace;
     text-align: center;
+}
+
+body {
+    font-family: monaco, monospace;
 }
 
 .other-content {
@@ -45,7 +48,7 @@ a:hover {
     border-style: outset;
 }
 
-button {
+button .dnd {
     padding: 0.5rem;
     margin-top: 1em;
     border-style: none;
@@ -54,7 +57,7 @@ button {
     background-color: var(--dark-accent);
 }
 
-button:hover {
+button:hover .dnd {
     transform: scale(1.1);
     border-style: outset;
     border-radius: 0.35rem;
@@ -69,6 +72,57 @@ img {
     max-width: 90%;
     max-height: 100%;
 }
+
+/* --------------------------- Dropdown ----------------------------*/
+/* -----------------------------------------------------------------*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+    color: var(--text-primary);
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+
+    font-family: monaco, monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+}
+
+.dropdown button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: var(--dark-accent);
+}
+
+.dropdown-content {
+    background: #747474;
+    border: 1px solid #ddd;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a.dropdown {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+a.dropdown:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--dark-accent)
+}
+
 
 /* --------------------------- Navbar ----------------------------*/
 /* ---------------------------------------------------------------*/

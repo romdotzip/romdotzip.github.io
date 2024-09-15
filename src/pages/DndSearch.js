@@ -8,6 +8,7 @@ function DndSearch() {
             <input
                 type="text"
                 id="monsterInput"
+                className="dnd"
                 placeholder="Enter a monster name"
             />
             <button id="searchButton">Search</button>
