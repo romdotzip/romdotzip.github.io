@@ -11,6 +11,11 @@
     text-align: center;
 }
 
+::selection {
+    background: var(--light-accent);
+    color: var(--background-primary);
+}
+
 body {
     font-family: monaco, monospace;
 }
@@ -27,7 +32,9 @@ body {
 
 img {
     border-radius: 5px;
-    border: 3px solid var(--background-secondary);
+    box-shadow: 0px 0px 5px 2px rgb(2, 2, 2, .5);
+    max-width: 90%;
+    max-height: 100%;
 }
 
 a {
@@ -48,30 +55,14 @@ a:hover {
     border-style: outset;
 }
 
-button .dnd {
-    padding: 0.5rem;
-    margin-top: 1em;
-    border-style: none;
-    border-radius: 0.25rem;
-    color: var(--text-primary);
-    background-color: var(--dark-accent);
-}
-
-button:hover .dnd {
-    transform: scale(1.1);
-    border-style: outset;
-    border-radius: 0.35rem;
-}
-
 iframe {
-    max-width: 90%;
-    max-height: 100%
-}
-
-img {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px 2px rgb(2, 2, 2, .5);
     max-width: 90%;
     max-height: 100%;
 }
+
 
 /* --------------------------- Dropdown ----------------------------*/
 /* -----------------------------------------------------------------*/
@@ -102,14 +93,21 @@ button.dropdown {
     text-decoration-color: var(--dark-accent);
 }
 
+.dropdown:hover button.dropdown {
+    text-decoration: underline;
+    text-decoration-color: var(--dark-accent);
+}
+
 .dropdown-content {
-    background: var(--background-secondary);
-    border: 2px solid var(--light-accent);
+    background: var(--background-primary);
+    border: 2px solid var(--dark-accent);
     overflow-y: auto;
     display: none;
     padding-left: 5px;
     padding-right: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: -4px 4px 10px 3px rgb(2, 2, 2, .7);
     position: absolute;
 }
 
@@ -126,7 +124,7 @@ a.dropdown {
 
 a.dropdown:hover {
     text-decoration: underline;
-    text-decoration-color: var(--light-accent)
+    text-decoration-color: var(--dark-accent)
 }
 
 
@@ -241,7 +239,62 @@ div.noPage a:hover {
 
 /* --------------------------- DnDSearch -------------------------*/
 /* ---------------------------------------------------------------*/
+div.dndSearchPage input:-webkit-autofill,
+div.dndSearchPage input:-webkit-autofill:hover, 
+div.dndSearchPage input:-webkit-autofill:focus, 
+div.dndSearchPage input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--background-primary) inset !important;
+}
+
+div.dndSearchPage input:-webkit-autofill{
+    -webkit-text-fill-color: var(--text-primary) !important;
+}
+
 div.dndSearchPage input {
     padding: 0.25rem;
     margin-right: 0.5rem;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 5px 1px rgb(2, 2, 2, .5);
+}
+
+div.dndSearchPage input:focus {
+    outline: none;
+}
+
+.dndSearchPage button {
+    padding: 0.5rem;
+    margin-top: 1em;
+    border-style: none;
+    border-radius: 0.25rem;
+    color: var(--text-primary);
+    background-color: var(--dark-accent);
+    box-shadow: 0px 0px 5px 1px rgb(2, 2, 2, .5);
+}
+
+.dndSearchPage button:hover {
+    transform: scale(1.1);
+    border-radius: 0.35rem;
+}
+
+.dndSearchPage button:active {
+    background-color: var(--light-accent);
+}
+
+div.dndSearchPage h2 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+div.choiceButtons {
+    border: 2px solid var(--dark-accent);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    box-shadow: 0px 0px 10px 5px rgb(2, 2, 2, .5);
+}
+
+div.choiceButtons button {
+    margin: 0.25rem;
 }

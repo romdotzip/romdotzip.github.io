@@ -1,6 +1,5 @@
 import './css/style.css';
 import Router from './components/Router';
-import { useState } from 'react';
 
 function App() {
   return (

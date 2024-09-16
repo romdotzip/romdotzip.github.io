@@ -29,11 +29,11 @@ function AboutMe() {
                 <p>
                     I'm making this website to keep all of my projects that I've worked on in
                     one spot. I also thought it would be good for me to practice keeping my
-                    website secure from things like SQL (if I ever add a database) and XSS, and
-                    other web vulnerabilties of course.
+                    website secure from things like SQL injections (if I ever add a database), XSS, and
+                    other web vulnerabilties.
                 </p>
                 <p>
-                    Go take a look at my <a href="https://github.com/rm0819" target="_blank">github</a> to see
+                    Go take a look at my <a href="https://github.com/rm0819" target="_blank" rel="noreferrer">github</a> to see
                     some more info about me, and any of my public projects.
                 </p>
             </div>
