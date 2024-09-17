@@ -4,7 +4,7 @@
     --text-secondary: #C7D4D6;
     --background-primary: #272727;
     --background-secondary: #747474;
-    --error: #FF652F;
+    --accent-one: #FF652F;
     --light-accent: #FFE400;
     --dark-accent: #14A76C;
 
@@ -45,12 +45,12 @@ a:hover {
     text-decoration-color: var(--dark-accent);
 }
 
-.errorMessage {
-    background-color: var(--error);
+.accent-oneMessage {
+    background-color: var(--accent-one);
     font-weight: bold;
     width: 300px;
 }
-.errorMessage:hover {
+.accent-oneMessage:hover {
     padding: 0.25rem;
     border-style: outset;
 }
@@ -213,7 +213,7 @@ div.noPage ._404 {
     0% {color: var(--text-primary);}
     25% {color: var(--dark-accent);}
     50% {color: var(--light-accent);}
-    75% {color: var(--error);}
+    75% {color: var(--accent-one);}
     100% {color: var(--text-primary);}
 }
 
@@ -232,7 +232,7 @@ div.noPage a {
 }
 
 div.noPage a:hover {
-    text-decoration-color: var(--error);
+    text-decoration-color: var(--accent-one);
 }
 
 
@@ -297,4 +297,39 @@ div.choiceButtons {
 
 div.choiceButtons button {
     margin: 0.25rem;
+}
+/* ------------ DataCards -----------*/
+div.dataCard {
+    display: flex;
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    max-width: 90%;
+
+    padding: 1rem;
+    border: 2px solid var(--accent-one);
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 10px 5px rgb(2, 2, 2, .5);
+}
+
+div.dataInfo p {
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+div.dataInfo p.title {
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-one);
+    text-decoration-thickness: 2px;
+}
+
+div.dataCard img {
+    margin-right: 1rem;
+    width: 100px;
+    height: 100px;
+    max-width: 50%;
+    max-height: 50%;
 }
