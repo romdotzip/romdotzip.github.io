@@ -301,6 +301,7 @@ div.choiceButtons button {
 /* ------------ DataCards -----------*/
 div.dataCard {
     margin: auto;
+    margin-top: 1rem;
     width: 300px;
     height: max-content;
     max-width: 90%;

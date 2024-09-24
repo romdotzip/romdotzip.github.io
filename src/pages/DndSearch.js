@@ -25,12 +25,7 @@ function SpellCard({data}) {
     return (
         <div className="dataCard">
             <p className="title">{data.name}</p>
-            <p><strong>HP:</strong> {data.hit_points ? data.hit_points : "???"}</p>
-            <p><strong>Type:</strong> {data.type ? data.type : "None"}</p>
-            <p><strong>Size:</strong> {data.size ? data.size : "None"}</p>
-            <p><strong>Alignment:</strong> {data.alignment ? data.alignment : "None"}</p>
-            <p><strong>Languages:</strong> {data.languages ? data.languages : "None"}</p>
-            <p><strong>Strength:</strong> {data.strength ? data.strength : "None"}</p>
+            <p><strong>HP:</strong> {data.h}</p>
             <p><strong>Description:</strong> { data.desc ? data.desc : "None"}</p>
         </div>
     )    
@@ -42,9 +37,9 @@ function DataCard({data, type}) {
             <></>
         )
     }
-    if (type === "monsters") {
+    if (data && type === "monsters") {
         return <MonsterCard data={data}/>
-    } else if (type === "spells") {
+    } else if (data && type === "spells") {
         return <SpellCard data={data}/>
     }
     
