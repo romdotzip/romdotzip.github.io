@@ -300,25 +300,24 @@ div.choiceButtons button {
 }
 /* ------------ DataCards -----------*/
 div.dataCard {
-    display: flex;
     margin: auto;
     width: 300px;
-    height: 400px;
+    height: max-content;
     max-width: 90%;
 
     padding: 1rem;
     border: 2px solid var(--accent-one);
     border-radius: 0.25rem;
-    box-shadow: 0px 0px 10px 5px rgb(2, 2, 2, .5);
+    box-shadow: 0px 0px 10px 5px rgb(2, 2, 2, .5); 
 }
 
-div.dataInfo p {
+div.dataCard p {
     text-align: left;
     padding: 0px;
     margin: 0px;
 }
 
-div.dataInfo p.title {
+div.dataCard p.title {
     font-weight: bold;
     font-size: large;
     text-decoration: underline;
@@ -327,6 +326,7 @@ div.dataInfo p.title {
 }
 
 div.dataCard img {
+    float: left;
     margin-right: 1rem;
     width: 100px;
     height: 100px;

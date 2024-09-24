@@ -7,16 +7,16 @@ function MonsterCard({data}) {
             <img 
                 src={"https://www.dnd5eapi.co" + data.image} 
                 alt={"Art of " + data.name}
+                title={data.name}
             />
-            <div className="dataInfo">
-                <p className="title">{data.name}</p>
-                <p><strong>HP:</strong> {data.hit_points}</p>
-                <p><strong>Type:</strong> {data.type}</p>
-                <p><strong>Size:</strong> {data.size}</p>
-                <p><strong>Alignment:</strong> {data.alignment}</p>
-                <p><strong>Languages:</strong> {data.languages}</p>
-                <p><strong>Strength:</strong> {data.strength}</p>
-            </div>
+            <p className="title">{data.name}</p>
+            <p><strong>HP:</strong> {data.hit_points ? data.hit_points : "???"}</p>
+            <p><strong>Type:</strong> {data.type ? data.type : "None"}</p>
+            <p><strong>Size:</strong> {data.size ? data.size : "None"}</p>
+            <p><strong>Alignment:</strong> {data.alignment ? data.alignment : "None"}</p>
+            <p><strong>Languages:</strong> {data.languages ? data.languages : "None"}</p>
+            <p><strong>Strength:</strong> {data.strength ? data.strength : "None"}</p>
+            <p><strong>Description:</strong> { data.desc ? data.desc : "None"}</p>
         </div>
     )    
 }
@@ -24,7 +24,14 @@ function MonsterCard({data}) {
 function SpellCard({data}) {
     return (
         <div className="dataCard">
-            
+            <p className="title">{data.name}</p>
+            <p><strong>HP:</strong> {data.hit_points ? data.hit_points : "???"}</p>
+            <p><strong>Type:</strong> {data.type ? data.type : "None"}</p>
+            <p><strong>Size:</strong> {data.size ? data.size : "None"}</p>
+            <p><strong>Alignment:</strong> {data.alignment ? data.alignment : "None"}</p>
+            <p><strong>Languages:</strong> {data.languages ? data.languages : "None"}</p>
+            <p><strong>Strength:</strong> {data.strength ? data.strength : "None"}</p>
+            <p><strong>Description:</strong> { data.desc ? data.desc : "None"}</p>
         </div>
     )    
 }
