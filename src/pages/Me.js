@@ -1,16 +1,13 @@
 import linkImage from '../images/link.png';
-import AboutMeBar from '../components/AboutMeBar';
 
-function AboutMe() {
+function Me() {
     return (
-        <div className="aboutPage">
+        <div className="mePage">
             <meta charSet="UTF-8" />
             <meta name="author" content="rm0819" />
             <meta name="description" content="About rm0819" />
             <meta name="keywords" content="rm0819" />
             <title>About Me</title>
-            <div id="navbar" />
-            <AboutMeBar />
             <div className="content">
                 <h1>It's me time!!! Let's talk about me!!</h1>
                 <div className="profileCard">
@@ -41,4 +38,4 @@ function AboutMe() {
     );
 }
 
-export default AboutMe;
+export default Me;

@@ -1,4 +1,3 @@
-import AboutMeBar from '../components/AboutMeBar';
 
 function Videos() {
     return (
@@ -8,8 +7,6 @@ function Videos() {
             <meta name="description" content="rm0819's Videos" />
             <meta name="keywords" content="rm0819, YouTube, Videos" />
             <title>Videos!</title>
-            <div id="navbar" />
-            <AboutMeBar />
             <h1>Videos!</h1>
             <p>
                 Here are any videos that I think are super funny, or that I made, or both!

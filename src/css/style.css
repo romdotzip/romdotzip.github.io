@@ -8,6 +8,8 @@
     --light-accent: #FFE400;
     --dark-accent: #14A76C;
 
+    --font-size: 18px;
+
     text-align: center;
 }
 
@@ -18,6 +20,7 @@
 
 body {
     font-family: monaco, monospace;
+    font-size: var(--font-size);
 }
 
 .other-content {
@@ -63,6 +66,17 @@ iframe {
     max-height: 100%;
 }
 
+.content {
+    margin: auto;
+    max-width: 70%;
+}
+
+.styled {
+    display: inline;
+    width: fit-content;
+    font-weight: bold;
+}
+
 
 /* --------------------------- Dropdown ----------------------------*/
 /* -----------------------------------------------------------------*/
@@ -81,7 +95,7 @@ button.dropdown {
     padding-right: 0.25rem;
 
     font-family: monaco, monospace;
-    font-size: 16px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 300;
     font-stretch: normal;
@@ -113,18 +127,34 @@ button.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: inline-block;
-    top: 19px;
+    top: 20px;
     left: 4px;
 }
 
 a.dropdown {
     text-decoration: none;
     color: var(--text-primary);
+    display: block;
 }
 
 a.dropdown:hover {
     text-decoration: underline;
     text-decoration-color: var(--dark-accent)
+}
+
+
+/* --------------------- About Dropdown --------------------------*/
+/* ---------------------------------------------------------------*/
+.about a.dropdown:hover {
+    text-decoration-color: var(--light-accent);
+}
+
+.about:hover button.dropdown {
+    text-decoration-color: var(--light-accent);
+}
+
+.about .dropdown-content {
+    border: 2px solid var(--light-accent);
 }
 
 
@@ -161,6 +191,7 @@ a.navbar:hover {
 /* ---------------------------------------------------------------*/
 div.aboutNav {
     margin: auto;
+    margin-top: 1.5rem;
     width: 95%;
 }
 
