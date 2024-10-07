@@ -6,7 +6,7 @@ function MonsterCard({data}) {
         <div className="dataCard">
             <img 
                 src={"https://www.dnd5eapi.co" + data.image} 
-                alt={"Art of " + data.name}
+                alt={"Artwork of " + data.name}
                 title={data.name}
             />
             <p className="title">{data.name}</p>
