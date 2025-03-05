@@ -17,7 +17,7 @@ function Navbar() {
             <div className="dropdown about">
               <button className="dropdown">About</button>
               <div className="dropdown-content">
-                <Link className="dropdown" to="/me">rm0819</Link>
+                <Link className="dropdown" to="/me">romdotzip</Link>
                 <Link className="dropdown" to="/videos">Videos</Link>
                 <Link className="dropdown" to="/accessibility">Accessibility</Link>
               </div>

@@ -4,9 +4,9 @@ function Me() {
     return (
         <div className="mePage">
             <meta charSet="UTF-8" />
-            <meta name="author" content="rm0819" />
-            <meta name="description" content="About rm0819" />
-            <meta name="keywords" content="rm0819" />
+            <meta name="author" content="romdotzip" />
+            <meta name="description" content="About romdotzip" />
+            <meta name="keywords" content="romdotzip" />
             <title>About Me</title>
             <div className="content">
                 <h1>It's me time!!! Let's talk about me!!</h1>
@@ -30,7 +30,7 @@ function Me() {
                     other web vulnerabilties.
                 </p>
                 <p>
-                    Go take a look at my <a href="https://github.com/rm0819" target="_blank" rel="noreferrer">github</a> to see
+                    Go take a look at my <a href="https://github.com/romdotzip" target="_blank" rel="noreferrer">github</a> to see
                     some more info about me, and any of my public projects.
                 </p>
             </div>

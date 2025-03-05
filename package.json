@@ -1,7 +1,7 @@
 {
-  "name": "rm0819-website",
+  "name": "romdotzip-website",
   "version": "0.1.0",
-  "homepage": "https://rm0819.github.io",
+  "homepage": "https://romdotzip.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -41,6 +41,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.3.0"
   }
 }

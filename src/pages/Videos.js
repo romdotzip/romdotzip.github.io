@@ -3,9 +3,9 @@ function Videos() {
     return (
         <div>
             <meta charSet="UTF-8" />
-            <meta name="author" content="rm0819" />
-            <meta name="description" content="rm0819's Videos" />
-            <meta name="keywords" content="rm0819, YouTube, Videos" />
+            <meta name="author" content="romdotzip" />
+            <meta name="description" content="romdotzip's Videos" />
+            <meta name="keywords" content="romdotzip, YouTube, Videos" />
             <title>Videos!</title>
             <h1>Videos!</h1>
             <p>

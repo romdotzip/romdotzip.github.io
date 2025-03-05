@@ -1,6 +1,17 @@
+import iconImage from '../images/website icon 64x64.png';
+
 function HomePage() {
     return (
-      <h1>rm0819's Various Web Projects Homepage!</h1>
+      <>
+        <img 
+          src={iconImage}
+          alt="Low resolution duck" 
+          width="64" 
+          height="64"
+        />
+        <h1>romdotzip's Various Web Projects Homepage!</h1>
+        
+      </>
     );
 }
 
